@@ -1,0 +1,14 @@
+class Solution {
+    long floorSqrt(long n) {
+        // Your code here
+        long ans = 0;
+        for(long i = 0 ; i<=n ; i++){
+            long val =i*i;
+            if(val<=n){
+                ans = i;
+            }else
+            break;
+        }
+        return ans;
+    }
+}
